@@ -1,0 +1,22 @@
+<div class="container mt-5">
+
+  <form class="was-validated" id="logForm" action="/login" method="POST">
+
+    <div class="mb-3">
+      <input type="email" placeholder="your email" name="email" class="is-invalid" id="email"
+        style="max-width: 80%" autocomplete="off" required>
+    </div>
+
+    <div class="mb-3">
+      <input type="password" placeholder="your password" name="password" class="is-invalid" id="password"
+        style="max-width: 80%" autocomplete="off" minlength="6" required>
+    </div>
+
+    <button id=" logBtn" type="submit" class="btn">Отправить</button>
+
+    <a href="/" class="btn">Вернуться на главную</a>
+
+  </form>
+
+  <div id="loginModal" style="max-width: 80%"></div>
+</div>
