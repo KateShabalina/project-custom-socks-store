@@ -3,12 +3,38 @@
   font-size: 24px;
 }
 
+#navbarNav {
+  display: flex;
+  justify-content: right;
+}
+
 .page-footer {
   display: flex;
   justify-content: space-around;
 }
 
-#navbarNav {
+.favourites-container {
   display: flex;
-  justify-content: right;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.buttons-favourites {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-favourites a {
+ margin: 5px;
+}
+
+.card-favourite {
+  margin: 20px;
+}
+
+#down-footer {
+  position: fixed; 
+  left: 0; 
+  bottom: 0;
+  width: 100%;
 }
