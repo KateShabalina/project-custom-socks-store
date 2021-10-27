@@ -12,3 +12,74 @@
   display: flex;
   justify-content: right;
 }
+/* .filter-green{
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  height: 300px;
+} */
+
+.generator {
+  /* height: 700px; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sock-image {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+}
+
+.sock-image img {
+
+  width: 300px;
+}
+
+.parameters {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.color-picker input {
+  width: 100px;
+}
+
+/* Sock color */
+#green {
+  background-color: #00A19D;
+  height: 100px;
+}
+
+#beige {
+  background-color: #FFF8E5;
+  height: 100px;
+}
+
+#orange {
+  background-color: #FFB344;
+  height: 100px;
+}
+
+#red {
+  background-color: #E05D5D;
+  height: 100px;
+}
+
+#blue {
+  background-color: #A2D2FF;
+  height: 100px;
+}
+
+#yellow {
+  background-color: #FEE440;
+  height: 100px;
+}
+
+#pink {
+  background-color: #E4BAD4;
+  height: 100px;
+}
+
+.img-picker input {
+  width: 100px;
+}

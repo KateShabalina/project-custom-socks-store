@@ -16,6 +16,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.render('index');
 })
+app.get('/generate', (req, res) => {
+  res.render('generate-socks');
+})
 
 app.listen(PORT, () => {
   console.log(`server started PORT: ${PORT}`);
