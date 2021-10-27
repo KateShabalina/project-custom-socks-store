@@ -1,0 +1,14 @@
+* {
+  font-family: 'Poiret One', cursive;
+  font-size: 24px;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbarNav {
+  display: flex;
+  justify-content: right;
+}
