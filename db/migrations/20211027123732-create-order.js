@@ -23,6 +23,14 @@ module.exports = {
           key: 'id',
         },
       },
+      count: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
+      toPay: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
       fullname: {
         type: Sequelize.TEXT,
         allowNull: false,
@@ -33,10 +41,6 @@ module.exports = {
       },
       phone: {
         type: Sequelize.TEXT,
-        allowNull: false,
-      },
-      toPay: {
-        type: Sequelize.INTEGER,
         allowNull: false,
       },
       createdAt: {

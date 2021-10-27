@@ -24,6 +24,10 @@ module.exports = {
       pattern: {
         type: Sequelize.TEXT,
       },
+      price: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
       isFavourite: {
         type: Sequelize.BOOLEAN,
       },
