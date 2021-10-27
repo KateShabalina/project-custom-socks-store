@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "yourdb",
-    "password": "youpassword",
-    "database": "yourdb",
+    "username": "edw-nmv",
+    "password": "bch5sjb7",
+    "database": "socksdb",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
