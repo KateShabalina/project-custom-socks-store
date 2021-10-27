@@ -22,6 +22,10 @@ module.exports = (sequelize, DataTypes) => {
     color: DataTypes.TEXT,
     img: DataTypes.TEXT,
     pattern: DataTypes.TEXT,
+    price: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     isFavourite: DataTypes.BOOLEAN,
     isOrdered: DataTypes.BOOLEAN,
   }, {

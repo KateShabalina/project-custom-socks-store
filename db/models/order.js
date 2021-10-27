@@ -23,6 +23,14 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    count: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    toPay: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     fullname: {
       type: DataTypes.TEXT,
       allowNull: false,
@@ -32,10 +40,6 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
     phone: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-    },
-    toPay: {
       type: DataTypes.TEXT,
       allowNull: false,
     },
