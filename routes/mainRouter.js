@@ -126,7 +126,6 @@ router.post('/login', async (req, res) => {
         path: '/login'
       })
   }
-
   req.session.user = {
     id: isUser.id,
     username: isUser.username,

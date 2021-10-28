@@ -1,4 +1,4 @@
-const addFavouriteBtn = document.getElementById('add-favourite-btn');
+// const addFavouriteBtn = document.getElementById('add-favourite-btn');
 
 addFavouriteBtn?.addEventListener('click', async (event) => {
   const style = document.querySelector('.sockMain').outerHTML;
@@ -20,3 +20,4 @@ addFavouriteBtn?.addEventListener('click', async (event) => {
   }
   // window.location.href = '/favourites';
 });
+
