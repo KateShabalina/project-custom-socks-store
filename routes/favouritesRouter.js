@@ -6,9 +6,9 @@ router.get('/', (req, res) => {
   res.render('favourites');
 });
 
-router.post('/', async (req, res) => {
-  const favourites = await Sock.findAll({ where: req.body.isFavourite === true })
-  console.log(favourites);
-})
+// router.get('/', async (req, res) => {
+//   const favourites = await Sock.findAll({ where: req.body.isFavourite === true })
+//   console.log(favourites);
+// })
 
 module.exports = router;

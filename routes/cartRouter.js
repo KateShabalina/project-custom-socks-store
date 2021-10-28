@@ -3,7 +3,7 @@ const { User, Sock } = require('../db/models');
 
 router.get('/', async (req, res) => {
   const email = req.session.user.email;
-  
+
   let user;
   let socksList;
 
