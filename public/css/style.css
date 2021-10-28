@@ -71,18 +71,7 @@
   bottom: 0;
   width: 100%;
 }
-.filter-green{
-  filter: invert(73%) sepia(18%) saturate(324%) hue-rotate(270deg) brightness(103%) contrast(98%);
-}
-/*  
-#green filter: invert(45%) sepia(95%) saturate(2867%) hue-rotate(150deg) brightness(92%) contrast(101%);
-#beige filter: invert(98%) sepia(58%) saturate(494%) hue-rotate(305deg) brightness(103%) contrast(101%);
-#orange filter: invert(85%) sepia(90%) saturate(611%) hue-rotate(308deg) brightness(101%) contrast(101%);
-#red filter: invert(43%) sepia(7%) saturate(5940%) hue-rotate(316deg) brightness(107%) contrast(77%);
-#blue filter: invert(77%) sepia(52%) saturate(625%) hue-rotate(179deg) brightness(101%) contrast(102%);
-#yellow filter: invert(95%) sepia(50%) saturate(7335%) hue-rotate(322deg) brightness(107%) contrast(107%);\
-#pink filter: invert(73%) sepia(18%) saturate(324%) hue-rotate(270deg) brightness(103%) contrast(98%);
-*/
+
 .generator {
   /* height: 700px; */
   display: flex;
@@ -96,6 +85,8 @@
   /* margin-right: -100px; */
   display: flex;
   justify-content: space;
+  /* background-color: aqua;
+  background-image: url(/images/sock-patterns/oleg.png); */
 }
 
 .sock-image img {
@@ -174,4 +165,27 @@
 
 .generator-buttons {
   margin-top: 30px;
+}
+
+
+.sockGreen{
+  background-color: #00A19D;
+}
+.sockBeige{
+  background-color: #FFF8E5;
+}
+.sockOrange{
+  background-color: #FFC069;
+}
+.sockRed{
+  background-color: #E05D5D;
+}
+.sockBlue{
+  background-color: #A2D2FF;
+}
+.sockYellow{
+  background-color: #FEE440;
+}
+.sockPink{
+  background-color: #E4BAD4;
 }
