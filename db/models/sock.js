@@ -25,9 +25,16 @@ module.exports = (sequelize, DataTypes) => {
     price: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      defaultValue: 999,
     },
-    isFavourite: DataTypes.BOOLEAN,
-    isOrdered: DataTypes.BOOLEAN,
+    isFavourite: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
+    isOrdered: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
   }, {
     sequelize,
     modelName: 'Sock',

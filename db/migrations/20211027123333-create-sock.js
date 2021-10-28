@@ -30,9 +30,11 @@ module.exports = {
       },
       isFavourite: {
         type: Sequelize.BOOLEAN,
+        defaultValue: false,
       },
       isOrdered: {
         type: Sequelize.BOOLEAN,
+        defaulValue: false,
       },
       createdAt: {
         allowNull: false,
