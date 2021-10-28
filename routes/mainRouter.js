@@ -5,9 +5,9 @@ const { User } = require('../db/models');
 // **MainPage**
 router.get('/', (req, res) => {
   if (!req.session.user) {
-    return res.render('index', { isSession: false })
+    return res.render('mainpage', { isSession: false })
   }
-  res.render('index', { isSession: req.session.user.isSession })
+  res.render('mainpage', { isSession: req.session.user.isSession })
 })
 
 // **Registration**
