@@ -40,6 +40,7 @@ app.use(session(sConfig));
 app.use('/', mainRouter);
 app.use('/generate', generateRouter);
 app.use('/favourites', favouritesRouter);
+app.use('/', mainpageRouter);
 
 app.listen(PORT, () => {
   console.log(`server started PORT: ${PORT}`);

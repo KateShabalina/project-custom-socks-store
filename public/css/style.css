@@ -3,15 +3,42 @@
   font-size: 24px;
 }
 
+/* header */
+
 #navbarNav {
   display: flex;
   justify-content: right;
 }
 
-.page-footer {
+.logo {
   display: flex;
-  justify-content: space-around;
 }
+
+.logo img {
+  margin: 0 20px;
+}
+
+/* main page */
+
+.main-page-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 5%;
+}
+
+.main-text {
+  margin: 1%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.main-page-btn {
+  width: 50%;
+  margin-top: 2%;
+}
+
+/* favourites */
 
 .favourites-container {
   display: flex;
@@ -30,6 +57,12 @@
 
 .card-favourite {
   margin: 20px;
+}
+/* footer */
+
+.page-footer {
+  display: flex;
+  justify-content: space-around;
 }
 
 #down-footer {
