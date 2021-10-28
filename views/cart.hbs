@@ -9,15 +9,15 @@
   <div class="col">
 
     <div class="row cardArea">
-      {{#each goodsList}}
+      {{#each socksList}}
       <div class="card" style="width: 18rem;">
         <img src="#" class="card-img-top" alt="imgCard">
         <div class="card-body">
-          <h5 class="card-title">Ваш дизайн №{{id}}</h5>
+          <h5 class="card-title">Ваш дизайн {{img}}</h5>
           <p class="card-text">Вы выбрали: цвет {{color}}; цена {{price}}</p>
           <div class="buttons-favourites">
-            <a href="#" class="btn btn-danger">Функция выбора количества</a>
-            <a href="#" class="btn btn-secondary">Удалить</a>
+            <a href="#" class="btn btn-danger">Кнопка выбора количества</a>
+            <a href="cart/delete/{{id}}" class="btn btn-secondary">Удалить</a>
           </div>
         </div>
       </div>
