@@ -1,0 +1,33 @@
+<div class="container mt-4">
+  {{#if empty}}
+  <div>
+    <p class="h2">Ваша корзина пуста</p>
+    <p class="h3">Выберите нужный Вам товар и добавьте его в корзину.
+    </p>
+  </div>
+  {{else}}
+  <div class="col">
+
+    <div class="row cardArea">
+      {{#each goodsList}}
+      <div class="card" style="width: 18rem;">
+        <img src="#" class="card-img-top" alt="imgCard">
+        <div class="card-body">
+          <h5 class="card-title">Ваш дизайн №{{id}}</h5>
+          <p class="card-text">Вы выбрали: цвет {{color}}; цена {{price}}</p>
+          <div class="buttons-favourites">
+            <a href="#" class="btn btn-danger">Функция выбора количества</a>
+            <a href="#" class="btn btn-secondary">Удалить</a>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+    <div class="col mt-2">
+      <p>Количество товаров: </p>
+      <p>Итоговая цена: </p>
+      <a href="#" class="btn btn-success">Кнопка купить (отправляет в order, socks, рендер на форму для покупки)</a>
+    </div>
+    {{/if}}
+  </div>
