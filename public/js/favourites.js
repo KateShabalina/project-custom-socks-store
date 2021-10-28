@@ -1,7 +1,22 @@
 const addFavouriteBtn = document.getElementById('add-favourite-btn');
 
 addFavouriteBtn?.addEventListener('click', async (event) => {
-  const response = await fetch('/generate');
+  const style = document.querySelector('.sockMain').outerHTML;
+
+  const response = await fetch('/generate', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      style,
+    })
+  });
   const data = await response.json();
-  window.location.href = '/favourites';
+  if (data.okay) {
+    alert('okay')
+  } else {
+    alert('NOT OKAY')
+  }
+  // window.location.href = '/favourites';
 });
