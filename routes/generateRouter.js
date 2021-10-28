@@ -2,7 +2,7 @@ const router = require('express').Router();
 // const { Sock } = require('../db/models');
 
 router.get('/', (req, res) => {
-  res.render('generate-socks');
+  res.render('generate-socks', { isSession: req.session.user.isSession });
 });
 
 // router.get('/', async (req, res) => {
