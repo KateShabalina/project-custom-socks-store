@@ -1,0 +1,32 @@
+<div class="container mt-5">
+
+  <form class="was-validated" id="regForm" action="/registration" method="POST">
+
+    <div class="mb-3">
+      <input type="text" placeholder="your username" name="username" class="is-invalid" id="username"
+        style="max-width: 80%" autocomplete="off" required>
+    </div>
+
+    <div class="mb-3">
+      <input type="email" placeholder="your email" name="email" class="is-invalid" id="email"
+        style="max-width: 80%" autocomplete="off" required>
+    </div>
+
+    <div class=" mb-3">
+      <input type="password" placeholder="your password" name="firstPassword" class="is-invalid"
+        id="firstPassword" style="max-width: 80%" autocomplete="off" minlength="6" required>
+    </div>
+
+    <div class="mb-3">
+      <input type="password" placeholder="your password" name="secondPassword" class="is-invalid"
+        id="secondPassword" style="max-width: 80%" autocomplete="off" minlength="6" required>
+    </div>
+
+    <button type="submit" class="btn">Отправить</button>
+
+    <a href="/" class="btn">Вернуться на главную</a>
+
+  </form>
+
+  <div id="regModal" style="max-width: 80%"></div>
+</div>
