@@ -3,7 +3,8 @@ const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
 
-const favouritesRouter = require('./routes/favourites.route')
+const favouritesRouter = require('./routes/favourites.route');
+const mainpageRouter = require('./routes/mainpage.route')
 
 const app = express();
 const PORT = 3000;
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use('/favourites', favouritesRouter);
+app.use('/', mainpageRouter);
 
 app.get('/', (req, res) => {
   res.render('index');
