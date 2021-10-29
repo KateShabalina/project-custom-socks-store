@@ -10,16 +10,40 @@
   <div class="col">
     <div class="row cardArea">
       {{#each socksList}}
-      <div class="card p-1 m-1">
-        <h5 class="card-title">Ваш дизайн #{{this.id}}</h5>
-        <p class="card-text">Цена {{this.price}}</p>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          {{{this.style}}}
+          <p class="card-text">Цена {{this.price}}</p>
+          <div>
+            <form data-id="{{this.id}}" class="form" id="countForm" action="/cart/{{this.id}}/count" method="post">
+              <p>Выберите количество:</p>
+              <div>
+                <select name="count" id="countSelect">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <p><input type="submit" value="Отправить"></p>
+              <div>
+              </div>
+            </form>
+            <a href="/cart/delete/{{this.id}}" class="btn btn-secondary">Удалить</a>
+          </div>
+        </div>
       </div>
       {{/each}}
     </div>
   </div>
 
-  <div class="col mt-2">
-    <a href="/order" class="btn btn-success">Оставить заявку</a>
+    <div class="col mt-2">
+      <p>Количество товаров: Сумма всех count после submit</p>
+      <p>Итоговая цена: </p>
+      <a href="/order" class="btn btn-success">Кнопка купить (отправляет в order, socks, рендер на форму для
+        покупки)</a>
+    </div>
+    {{/if}}
   </div>
-  {{/if}}
-</div>
+

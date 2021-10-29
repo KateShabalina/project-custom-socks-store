@@ -1,5 +1,5 @@
 const addFavouriteBtn = document.getElementById('add-favourite-btn');
-const addBacketBtn = document.getElementById('add-favourite-btn');
+const addBacketBtn = document.getElementById('add-to-basket-btn');
 
 addFavouriteBtn?.addEventListener('click', async (event) => {
   // event.preventDefault();
@@ -25,7 +25,6 @@ addFavouriteBtn?.addEventListener('click', async (event) => {
 
 addBacketBtn?.addEventListener('click', async (event) => {
   const style = document.querySelector('.sockMain').outerHTML;
-  alert('neeeeeet')
   const response = await fetch('/generate/basket', {
     method: 'POST',
     headers: {
