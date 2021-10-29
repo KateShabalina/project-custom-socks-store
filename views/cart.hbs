@@ -11,12 +11,12 @@
     <div class="row cardArea">
       {{#each socksList}}
       <div class="card" style="width: 18rem;">
-        <img src="#" class="card-img-top" alt="imgCard">
         <div class="card-body">
-          <h5 class="card-title">Ваш дизайн {{img}}</h5>
-          <p class="card-text">Вы выбрали: цвет {{color}}; цена {{price}}</p>
+          <h5 class="card-title">Ваш дизайн #{{id}}</h5>
+          <p class="card-text">Цена {{this.price}}</p>
           <div>
-            <form data-id="{{id}}" class="form" id="countForm" action="/cart/{{id}}/count">
+            <form data-id="{{this.id}}" class="form" id="countForm" action="/cart/{{this.id}}/count" method="post">
+              <p>Выберите количество:</p>
               <div>
                 <select name="count" id="countSelect">
                   <option value="1">1</option>
@@ -26,11 +26,11 @@
                   <option value="5">5</option>
                 </select>
               </div>
+              <p><input type="submit" value="Отправить"></p>
               <div>
-                <p><input type="submit" value="Отправить"></p>
               </div>
             </form>
-            <a href="/cart/delete/{{id}}" class="btn btn-secondary">Удалить</a>
+            <a href="/cart/delete/{{this.id}}" class="btn btn-secondary">Удалить</a>
           </div>
         </div>
       </div>

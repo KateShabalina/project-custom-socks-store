@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
       })
   }
   try {
-    socksList = await Sock.findAll({ where: { userId: user.id, isOrdered: true }, raw: true })
+    socksList = await Sock.findAll({ where: { UserId: user.id, isOrdered: true }, raw: true })
   }
   catch (error) {
     return res
@@ -33,14 +33,14 @@ router.get('/', async (req, res) => {
       })
   }
   if (socksList.length <= 0) {
-    return res.render('cart', { empty: true })
+    return res.render('cart', { empty: true, isSession: req.session.user.isSession })
   }
-  res.render('cart', { socksList, empty: false })
+  res.render('cart', { socksList, empty: false, isSession: req.session.user.isSession })
 })
 
-router.post('/', (req, res) => {
+// router.post('/', (req, res) => {
 
-})
+// })
 
 router.put('/:id/count', async (req, res) => {
   const email = req.session.user.email
@@ -65,7 +65,7 @@ router.put('/:id/count', async (req, res) => {
   }
 
   try {
-    sock = await Sock.findAll({ where: { userId: user.id, isOrdered: true }, raw: true })
+    sock = await Sock.findAll({ where: { UserId: user.id, isOrdered: true }, raw: true })
     // console.log(sock);
   }
   catch (error) {
@@ -78,7 +78,7 @@ router.put('/:id/count', async (req, res) => {
   }
 
   try {
-    order = await Order.update({ count }, { where: { sockId: id, userId: user.id } })
+    order = await Order.update({ count }, { where: { SockId: id, UserId: user.id } })
     console.log(order);
     return res
       .status(200)
