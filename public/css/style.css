@@ -63,13 +63,15 @@
 }
 
 #main-page-btn {
-  width: 50%;
+  width: 100%;
   margin-top: 2%;
   color: white;
 }
 
 #main-page-btn:hover {
-  color: #FEE440;
+  color: black;
+  background-color: #FEE440;
+  border-color: black;
 }
 
 /* login */
@@ -131,13 +133,19 @@
 
 /* favourites */
 
+#no-have-fav {
+  margin-top: 20%;
+  text-align: center;
+}
+
 .favourites-container {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-around;
   flex-wrap: wrap;
   /* overflow: scroll; */
 }
+
 
 .buttons-favourites {
   display: flex;
@@ -145,14 +153,42 @@
 }
 
 .buttons-favourites a {
- margin: 5px;
+ margin: 2%;
  font-size: 3vh;
 }
 
-.card-favourite {
-  margin: 20px;
-  max-height: 45vh;
-  max-width: 45vh;
+.card {
+  align-items: center;
+  margin: 2% 1% 2% 1%;
+  width: 20%;
+  height: 30%;
+  /* max-height: 45vh;
+  max-width: 45vh; */
+}
+
+.card-favourite img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .btn-secondary {
+  background-color: darkgrey;
+}
+
+.card .btn-secondary:hover {
+  color: black;
+  background-color:#E05D5D;
+  border-color: black;
+}
+
+.card .btn-success {
+  background-color:#0dcaf0;
+}
+
+.card .btn-success:hover {
+  color: black;
+  background-color: #FEE440;
+  border-color: black;
 }
 
 /* footer */
