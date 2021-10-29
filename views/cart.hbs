@@ -12,7 +12,8 @@
       {{#each socksList}}
       <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">Ваш дизайн #{{id}}</h5>
+          {{!-- <h5 class="card-title">Ваш дизайн #{{id}}</h5> --}}
+          {{{this.style}}}
           <p class="card-text">Цена {{this.price}}</p>
           <div>
             <form data-id="{{this.id}}" class="form" id="countForm" action="/cart/{{this.id}}/count" method="post">
