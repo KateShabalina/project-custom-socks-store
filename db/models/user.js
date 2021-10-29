@@ -6,10 +6,10 @@ module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     static associate({ Sock, Order }) {
       User.hasMany(Sock, {
-        foreignKey: 'userId'
+        foreignKey: 'UserId'
       });
       User.hasMany(Order, {
-        foreignKey: 'userId'
+        foreignKey: 'UserId'
       });
     }
   }

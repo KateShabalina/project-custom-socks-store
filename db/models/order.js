@@ -7,20 +7,20 @@ module.exports = (sequelize, DataTypes) => {
     static associate({ User, Sock }) {
       //это важно!
       Order.belongsTo(User, {
-        foreignKey: 'userId'
+        foreignKey: 'UserId'
       });
       Order.belongsTo(Sock, {
-        foreignKey: 'sockId'
+        foreignKey: 'SockId'
       });
     }
   }
   //**обратите внимание на тип данных в сторонних ID**
   Order.init({
-    userId: {
+    UserId: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    sockId: {
+    SockId: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },

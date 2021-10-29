@@ -7,21 +7,19 @@ module.exports = (sequelize, DataTypes) => {
     static associate({ User, Order }) {
       //это важно!
       Sock.belongsTo(User, {
-        foreignKey: 'userId'
+        foreignKey: 'UserId'
       });
       Sock.hasMany(Order, {
-        foreignKey: 'sockId'
+        foreignKey: 'SockId'
       });
     }
   }
   Sock.init({
-    userId: {
+    UserId: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    color: DataTypes.TEXT,
-    img: DataTypes.TEXT,
-    pattern: DataTypes.TEXT,
+    style: DataTypes.TEXT,
     price: {
       type: DataTypes.INTEGER,
       allowNull: false,

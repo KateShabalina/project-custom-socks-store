@@ -7,7 +7,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      userId: {
+      UserId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         //это важно!
@@ -18,7 +18,7 @@ module.exports = {
           key: 'id',
         },
       },
-      sockId: {
+      SockId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         //это важно!

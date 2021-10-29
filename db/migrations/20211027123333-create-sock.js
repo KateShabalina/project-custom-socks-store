@@ -7,7 +7,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      userId: {
+      UserId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         //это важно!
@@ -18,13 +18,7 @@ module.exports = {
           key: 'id',
         },
       },
-      color: {
-        type: Sequelize.TEXT,
-      },
-      img: {
-        type: Sequelize.TEXT,
-      },
-      pattern: {
+      style: {
         type: Sequelize.TEXT,
       },
       price: {
