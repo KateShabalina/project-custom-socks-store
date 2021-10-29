@@ -4,11 +4,11 @@ const { User, Sock } = require('../db/models');
 router.get('/', async (req, res) => {
   const email = req.session.user.email;
   let user = await User.findOne({ where: { email }, raw: true });
-  console.log(req.session);
+
   let listFavourites = await Sock.findAll({
     where: { UserId: req.session.user.id, isFavourite: true },
   })
-  console.log('listFavourites::::', listFavourites);
+
   if (listFavourites.length <= 0) {
     return res.render('favourites', { empty: true, isSession: req.session.user.isSession });
   }

@@ -7,7 +7,11 @@
       но вот с незаметностью категорически не согласны. Носки могут стать деталью образа, отражающего характер
       владельца.
     </div>
+    {{#if isSession}}
+    <a href="/generate" type="button" class="btn btn-info" id="main-page-btn">Создать свой дизайн</a>
+    {{else}}
     <a href="/login" type="button" class="btn btn-info" id="main-page-btn">Создать свой дизайн</a>
+    {{/if}}
   </div>
   <div class="main-page-img">
     <img src="/images/mainpage.png" alt="">

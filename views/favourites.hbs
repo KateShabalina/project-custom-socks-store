@@ -7,7 +7,7 @@
   <div class="favourites-container">
     {{#each listFavourites}}
     <div class="card card-favourite" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
+      {{this.style}}
       <div class="card-body">
         <div class="buttons-favourites">
           <a href="#" class="btn btn-secondary delete-fav-btn" id="{{this.id}}">Удалить</a>
