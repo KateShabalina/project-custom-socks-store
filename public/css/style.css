@@ -1,6 +1,6 @@
 * {
   font-family: 'Poiret One', cursive;
-  font-size: 3.5vh;
+  font-size: 3vh;
 }
 
 /* header */
@@ -8,7 +8,7 @@
 #navbarNav {
   display: flex;
   justify-content: right;
-  height: 10vh;
+  height: 7vh;
 }
 
 #navbarNav a:hover{
