@@ -23,15 +23,15 @@ router.post('/', async (req, res) => {
 
   const addToDB = await Sock.create({
     UserId: id,
-    color: style
+    style: style
   });
 
   if (addToDB) {
-    res.json({okay: true})
+    res.json({ okay: true })
   } else {
-    res.json({okay: false})
+    res.json({ okay: false })
   }
-  
+
 })
 
 module.exports = router;
