@@ -1,4 +1,5 @@
 const deleteBtns = document.querySelectorAll('.delete-fav-btn');
+const pushBasket = document.querySelectorAll('.btn-success');
 
 deleteBtns?.forEach((deleteButton) => {
   deleteButton.addEventListener('click', async (event) => {
@@ -19,4 +20,25 @@ deleteBtns?.forEach((deleteButton) => {
     }
   });
 });
+
+pushBasket?.forEach((pushButton) => {
+  pushButton.addEventListener('click', async (event) => {
+    const response = await fetch('/favourites', {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: 'PUT',
+      body: JSON.stringify({
+        id: event.target.id,
+      })
+    })
+    const data = await response.json();
+  if (data.okay) {
+    alert('НОСКИ ДОБАВЛЕНЫ В КОРЗИНУ!')
+  } else {
+    alert('NOT OKAY')
+  }
+  });
+});
+
 
