@@ -69,7 +69,7 @@ router.post('/registration', async (req, res) => {
     .json({
       registration: true,
       message: 'Регистрация прошла успешно, новый пользователь создан',
-      path: '/'
+      path: '/login'
     })
 })
 
