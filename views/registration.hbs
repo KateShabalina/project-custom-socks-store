@@ -1,27 +1,27 @@
 <div class="container mt-4" id="reg-container">
   <form class="was-validated" id="regForm" action="/registration" method="POST">
-    <div>
+    <div class="reg-flex">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label" style="color: #1bb1ec;">Укажите имя пользователя:</label>
         <input type="text" placeholder="ваш username" name="username" class="form-control is-invalid" id="username"
-          aria-describedby="emailHelp" style="max-width: 100%" autocomplete="off" required>
+          aria-describedby="emailHelp" style="max-width: 80%" autocomplete="off" required>
       </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label" style="color: #1bb1ec;">Укажите ваш email:</label>
         <input type="email" placeholder="ваш email" name="email" class="form-control is-invalid" id="email"
-          aria-describedby="emailHelp" style="max-width: 100%" autocomplete="off" required>
+          aria-describedby="emailHelp" style="max-width: 80%" autocomplete="off" required>
       </div>
     </div>
-    <div>
+    <div class="reg-flex">
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label" style="color: #1bb1ec;">Придумайте пароль:</label>
         <input type="password" placeholder="ваш пароль" name="firstPassword" class="form-control is-invalid"
-          id="firstPassword" style="max-width: 100%" autocomplete="off" minlength="6" required>
+          id="firstPassword" style="max-width: 80%" autocomplete="off" minlength="6" required>
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label" style="color: #1bb1ec;">Повторите ваш пароль:</label>
         <input type="password" placeholder="ваш пароль" name="secondPassword" class="form-control is-invalid"
-          id="secondPassword" style="max-width: 100%" autocomplete="off" minlength="6" required>
+          id="secondPassword" style="max-width: 80%" autocomplete="off" minlength="6" required>
       </div>
     </div>
     <div class="reg-btns">
@@ -29,9 +29,8 @@
       <a href="/" class="btn btn-warning">Вернуться на главную</a>
     </div>
   </form>
-  <div id="regModal" style="max-width: 100%"></div>
+  <div id="regModal" style="max-width: 80%"></div>
 </div>
-{{!-- </div> --}}
 
 
 
