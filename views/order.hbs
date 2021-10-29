@@ -10,9 +10,10 @@
   <div class="row">
     <div class="row cardArea">
       {{#each socksList}}
-      <div class="card">
-        <h5 class="card-title">Ваш дизайн #{{this.id}}</h5>
-        <p class="card-text">Цена {{this.price}}</p>
+      <div class="card" id="order-card">
+        {{!-- <h5 class="card-title">Ваш дизайн #{{this.id}}</h5> --}}
+        {{{this.style}}}
+        <p class="card-text" id="order-price">Цена {{this.price}}</p>
         {{!-- <form class="form" id="countForm{{this.id}}" action="/order/{{this.id}}/count">
           <p>Выберите количество:</p>
           <div>
@@ -26,13 +27,13 @@
           </div>
           <input class="btn btn-info m-2" type="submit" value="Отправить">
         </form> --}}
-        <a href="/order/delete/{{this.id}}" class="btn btn-secondary">Удалить</a>
+        <a href="/order/delete/{{this.id}}" class="btn btn-secondary" id="order-delete-btn">Удалить</a>
       </div>
       {{/each}}
     </div>
   </div>
 
-  <div class="col mt-2">
+  <div class="col mt-2" id="order-text">
     <p>Итоговое кол-во носков: {{count}}</p>
     <p>Итоговая сумма: {{sum}} </p>
     <form id="orderForm" action="/order">
