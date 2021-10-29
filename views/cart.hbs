@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<div class="container mt-4" id="cart-main">
   {{#if empty}}
   <div>
     <p class="h2">Ваша корзина пуста</p>
@@ -7,19 +7,23 @@
   </div>
   {{else}}
 
-  <div class="main-cart">
-    <div class="row cardArea">
+  <div class="main-cart"  id="cart-container">
+    <div class="row cardArea" id="cart-area">
       {{#each socksList}}
-      <div class="card" style="width: 18rem;">
+      <div class="card" id="cart-img">
         {{{this.style}}}
-        <p class="card-text">Цена {{this.price}}</p>
+        <p class="card-text">Цена {{this.price}} руб.</p>
+        <p id="cart-mini-text">* Для студентов Эльбруса - 1999 руб.</p>
       </div>
       {{/each}}
     </div>
 
-    <div class="col mt-2 cart-btn">
+    {{!-- <div class="col mt-2 cart-btn" id="cart-btn">
+      <a href="/order" class="btn btn-warning">Оформить заявку</a>
+    </div> --}}
+    {{/if}}
+    <div class="col mt-2 cart-btn" id="cart-btn">
       <a href="/order" class="btn btn-warning">Оформить заявку</a>
     </div>
-    {{/if}}
   </div>
 </div>

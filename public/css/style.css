@@ -533,6 +533,43 @@
   background-repeat: repeat-y;
 }
 
+/* Cart style */
+
+/* #cart-main {
+  text-align: center;
+} */
+
+#cart-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+  width: 30%;
+  text-align: center;
+}
+
+#cart-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+#cart-img {
+  width: 75%;
+}
+
+#cart-img img {
+  width: 75%
+}
+
+#cart-mini-text {
+  font-size: 10px;
+}
+
+/* #cart-btn {
+  margin-left: 30%;
+} */
+
 /* cart-style */
 
 /* .main-cart {
