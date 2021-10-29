@@ -2,6 +2,7 @@ const addFavouriteBtn = document.getElementById('add-favourite-btn');
 const addBacketBtn = document.getElementById('add-favourite-btn');
 
 addFavouriteBtn?.addEventListener('click', async (event) => {
+  // event.preventDefault();
   const style = document.querySelector('.sockMain').outerHTML;
 
   const response = await fetch('/generate', {
@@ -40,7 +41,7 @@ addBacketBtn?.addEventListener('click', async (event) => {
   } else {
     alert('NOT OKAY')
   }
- 
+
   // window.location.href = '/favourites';
 });
 

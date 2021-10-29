@@ -1,6 +1,6 @@
 * {
   font-family: 'Poiret One', cursive;
-  font-size: 3vh;
+  font-size: 4vh;
 }
 
 /* header */
@@ -17,17 +17,20 @@
 
 .logo {
   display: flex;
+  height: 7vh;
+  padding-bottom: 4%;
 }
 
 .logo img {
   margin: 0 5%;
-  width: 12vh;
-  height: 12vh;
+  width: 9vh;
+  height: 9vh;
 }
 
 #title-main {
   color: #FEE440;
-  font-size: 6vh;
+  font-size: 5vh;
+  font-weight: 600;
 }
 
 /* main page */
@@ -78,38 +81,61 @@
 
 .login-btns {
   display: flex;
+  justify-content: flex-start;
 }
 
 .login-btns button {
   margin-right: 5%;
   height: 5%;
+  font-size: 3vh;
 }
 
 .login-btns a {
   height: 5%;
   width: 150%;
+  font-size: 3vh;
+}
+
+/* reg-container */
+
+#reg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.reg-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.reg-flex label {
+  font-size: 3.5vh;
 }
 
 .reg-btns {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.reg-btns button {
-  margin-right: 5%;
-  height: 5%;
-}
-
-.reg-btns a {
-  height: 5%;
-  width: 150%;
+.reg-btns button, .reg-btns a {
+  margin-right: 4%;
+  font-size: 3.5vh;
 }
 
 /* favourites */
 
 .favourites-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  /* overflow: scroll; */
 }
 
 .buttons-favourites {
@@ -119,22 +145,26 @@
 
 .buttons-favourites a {
  margin: 5px;
+ font-size: 3vh;
 }
 
 .card-favourite {
   margin: 20px;
+  max-height: 45vh;
+  max-width: 45vh;
 }
+
 /* footer */
 
 .page-footer {
   display: flex;
   justify-content: space-around;
-  height: 7vh;
   padding-bottom: 4%;
 }
 
 .page-footer a {
   color: white;
+  font-size: 3vh;
 }
 
 .page-footer a:hover {
@@ -146,6 +176,7 @@
   left: 0; 
   bottom: 0;
   width: 100%;
+  height: 5vh;
 }
 
 .generator {
