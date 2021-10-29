@@ -11,6 +11,7 @@ const mainRouter = require('./routes/mainRouter');
 const generateRouter = require('./routes/generateRouter')
 const favouritesRouter = require('./routes/favouritesRouter')
 const cartRouter = require('./routes/cartRouter')
+const orderRouter = require('./routes/orderRouter')
 
 const FileStore = sessionFileStore(session);
 const sConfig = {
@@ -42,6 +43,7 @@ app.use('/', mainRouter);
 app.use('/generate', generateRouter);
 app.use('/favourites', favouritesRouter);
 app.use('/cart', cartRouter);
+app.use('/order', orderRouter);
 
 app.listen(PORT, () => {
   console.log(`server started PORT: ${PORT}`);
