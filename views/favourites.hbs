@@ -1,12 +1,12 @@
 <div>
   {{#if empty}}
-  <div>
+  <div id="no-have-fav">
     <p class="h2">Вы еще ничего не добавили в избранное</p>
   </div>
   {{else}}
   <div class="favourites-container">
     {{#each listFavourites}}
-    <div class="card card-favourite" style="width: 18rem;">
+    <div class="card card-favourite">
       {{{this.style}}}
       <div class="card-body">
         <div class="buttons-favourites">
