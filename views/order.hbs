@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  {{#if empty}}
+  <div>
+    <p class="h2">Ваша корзина пуста</p>
+    <p class="h3">Выберите нужный Вам товар и добавьте его в корзину.
+    </p>
+  </div>
+  {{else}}
+
+  <div class="col">
+    <div class="row cardArea">
+      {{#each socksList}}
+      <div class="card">
+        <h5 class="card-title">Ваш дизайн #{{this.id}}</h5>
+        <p class="card-text">Цена {{this.price}}</p>
+        <div>
+          <form class="form" id="countForm{{this.id}}" action="/order/{{this.id}}/count">
+            <p>Выберите количество:</p>
+            <div>
+              <select name="count" id="countSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <input class="btn btn-info m-2" type="submit" value="Отправить">
+            <div>
+            </div>
+          </form>
+          <a href="/order/delete/{{this.id}}" class="btn btn-secondary">Удалить</a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+    <div class="col mt-2">
+      <form action="">
+        <input type="text" id="address" placeholder="Введите адрес" name="address" id="address" autocomplete="off"
+          required>
+        <input type="tel" id="phone" placeholder="Введите телефон" name="phone" id="phone" autocomplete="off" required>
+        <input class="btn btn-info m-2" type="submit" value="Купить">
+      </form>
+    </div>
+    {{/if}}
+  </div>

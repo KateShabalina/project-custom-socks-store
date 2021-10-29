@@ -32,6 +32,7 @@ module.exports = {
       count: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        defaultValue: 1,
       },
       address: {
         type: Sequelize.TEXT,
