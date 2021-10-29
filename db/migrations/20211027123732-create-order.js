@@ -7,17 +7,23 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      UserId: {
+      userId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        //это важно!
+        onDelete: 'cascade',
+        onUpdate: 'cascade',
         references: {
           model: 'Users',
           key: 'id',
         },
       },
-      SockId: {
+      sockId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        //это важно!
+        onDelete: 'cascade',
+        onUpdate: 'cascade',
         references: {
           model: 'Socks',
           key: 'id',
@@ -25,14 +31,6 @@ module.exports = {
       },
       count: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      toPay: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      fullname: {
-        type: Sequelize.TEXT,
         allowNull: false,
       },
       address: {
