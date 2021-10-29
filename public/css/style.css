@@ -1,0 +1,635 @@
+* {
+  font-family: 'Poiret One', cursive;
+  font-size: 4vh;
+}
+
+/* header */
+
+#navbarNav {
+  display: flex;
+  justify-content: right;
+  height: 7vh;
+}
+
+#navbarNav a:hover{
+  color: #FEE440;
+}
+
+.logo {
+  display: flex;
+  height: 7vh;
+  margin-top: -1%;
+  padding-bottom: 4%;
+}
+
+.logo img {
+  margin: 0 5%;
+  width: 9vh;
+  height: 9vh;
+}
+
+#title-main {
+  color: #FEE440;
+  font-size: 5vh;
+  font-weight: 600;
+}
+
+/* main page */
+
+.main-page {
+  display: flex;
+}
+
+.main-page-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 5%;
+}
+
+.main-text {
+  margin: 1%;
+  font-size: 3.5vh;
+  text-align: justify;
+}
+
+.main-page-img {
+  width: 50%;
+}
+
+.main-page-img img {
+  width: 100%;
+  transform: rotate(1deg);
+}
+
+#main-page-btn {
+  width: 100%;
+  margin-top: 2%;
+  color: white;
+}
+
+#main-page-btn:hover {
+  color: black;
+  background-color: #FEE440;
+  border-color: black;
+}
+
+/* login */
+
+#login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-btns {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.login-btns button {
+  margin-right: 5%;
+  height: 5%;
+  font-size: 3vh;
+}
+
+.login-btns a {
+  height: 5%;
+  width: 150%;
+  font-size: 3vh;
+}
+
+/* reg-container */
+
+#reg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.reg-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.reg-flex label {
+  font-size: 3.5vh;
+}
+
+.reg-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.reg-btns button, .reg-btns a {
+  margin-right: 4%;
+  font-size: 3.5vh;
+}
+
+/* favourites */
+
+#no-have-fav {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.favourites-container {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* overflow: scroll; */
+}
+
+
+.buttons-favourites {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-favourites a {
+ margin: 2%;
+ font-size: 3vh;
+}
+
+.card {
+  align-items: center;
+  margin: 2% 1% 2% 1%;
+  width: 20%;
+  height: 30%;
+  /* max-height: 45vh;
+  max-width: 45vh; */
+}
+
+.card-favourite img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .btn-secondary {
+  background-color: darkgrey;
+}
+
+.card .btn-secondary:hover {
+  color: black;
+  background-color:#E05D5D;
+  border-color: black;
+}
+
+.card .btn-success {
+  background-color:#0dcaf0;
+}
+
+.card .btn-success:hover {
+  color: black;
+  background-color: #FEE440;
+  border-color: black;
+}
+
+/* footer */
+
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 4%;
+}
+
+.page-footer a {
+  color: white;
+  font-size: 3vh;
+}
+
+.page-footer a:hover {
+  color: #22ccef;
+}
+
+#down-footer {
+  position: fixed; 
+  left: 0; 
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+}
+
+.generator {
+  /* height: 700px; */
+  margin-top: 3%;
+  display: flex;
+  /* justify-content: center; */
+
+}
+
+.sock-image {
+  width: 100%;
+  margin-left: 10%;
+  /* background-color: aqua; */
+  /* margin-right: -100px; */
+  /* display: flex;
+  justify-content: space-evenly; */
+  /* background-color: aqua;
+  background-image: url(/images/sock-patterns/oleg.png); */
+}
+
+.sock-image img {
+  /* width: 350px; */
+
+  height: 100%;
+  width: 100%;
+}
+
+.parameters {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.color-picker {
+  margin-bottom: 5%;
+}
+
+.color-picker h4 {
+  font-size: 40px;
+}
+
+.color-picker button {
+  width: 10%;
+  height: 75%;
+}
+
+/* Sock color */
+#green {
+  background-color: #00A19D;
+  /* width: 100px;
+  height: 100px; */
+}
+
+#beige {
+  background-color: #FFF8E5;
+  /* width: 100px;
+  height: 100px; */
+}
+
+#orange {
+  background-color: #FFC069;
+  /* width: 100px;
+  height: 100px; */
+}
+
+#red {
+  background-color: #E05D5D;
+  /* width: 100px;
+  height: 100px; */
+}
+
+#blue {
+  background-color: #A2D2FF;
+  /* width: 100px;
+  height: 100px; */
+}
+
+#yellow {
+  background-color: #FEE440;
+  /* width: 100px;
+  height: 100px; */
+}
+
+#pink {
+  background-color: #E4BAD4;
+  /* width: 100px;
+  height: 100px; */
+}
+
+#del-color {
+  /* width: 100px;
+  height: 100px; */
+  background-image: url(/images/remove.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: 55%;
+  background-position-y: 55%;
+}
+
+.img-picker {
+  margin-bottom: 0%;
+}
+
+.img-picker h4 {
+  font-size: 40px;
+}
+
+.img-picker input {
+  width: 10%;
+  height: 50%;
+  /* width: 100px;
+  height: 100px; */
+}
+
+.pattern-picker {
+  margin-bottom: 5%;
+}
+
+.pattern-picker h4 {
+  font-size: 40px;
+}
+
+.pattern-picker button {
+  width: 10%;
+  height: 75%;
+  /* width: 100px;
+  height: 100px; */
+}
+
+.generator-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.generator-buttons button {
+  width: 30%;
+  font-size: 25px;
+}
+
+/* Pattern background-image */
+
+#oleg {
+  background-image: url(/images/sock-patterns/oleg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#elbrus {
+  background-image: url(/images/sock-patterns/elbrus.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#heart {
+  background-image: url(/images/sock-patterns/heart.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#cat{
+  background-image: url(/images/sock-patterns/cat.png);
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
+#poo {
+  background-image: url(/images/sock-patterns/poo.png);
+  background-size: 175%;
+  background-repeat: no-repeat;
+}
+#sockSockPrint {
+  background-image: url(/images/sock-patterns/sock-print.png);
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
+#stripes {
+  background-image: url(/images/sock-patterns/stripes.png);
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
+
+
+#del-pattern {
+  background-image: url(/images/remove.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: 55%;
+  background-position-y: 55%;
+}
+
+.generator-buttons {
+  margin-top: 30px;
+}
+
+/* Color select buttons */
+
+.sockGreen{
+  background-color: #00A19D;
+}
+.sockBeige{
+  background-color: #FFF8E5;
+}
+.sockOrange{
+  background-color: #FFC069;
+}
+.sockRed{
+  background-color: #E05D5D;
+}
+.sockBlue{
+  background-color: #A2D2FF;
+}
+.sockYellow{
+  background-color: #FEE440;
+}
+.sockPink{
+  background-color: #E4BAD4;
+}
+
+/* Image select buttons */
+
+.sockWhale {
+  background-image: url(/images/sock-img/whale.png);
+  background-size: 24%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 40%;
+}
+
+.sockTiger {
+  background-image: url(/images/sock-img/tiger.png);
+  background-size: 24%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 40%;
+}
+
+.sockRobin {
+  background-image: url(/images/sock-img/robin.png);
+  background-size: 24%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 40%;
+}
+
+.sockMountain {
+  background-image: url(/images/sock-img/mountain.png);
+  background-size: 24%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 40%;
+}
+
+.sockWine {
+  background-image: url(/images/sock-img/wine-bottle.png);
+  background-size: 24%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 40%;
+}
+
+.sockShawarma {
+  background-image: url(/images/sock-img/shawarma.png);
+  background-size: 24%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 40%;
+}
+
+.sockCannabis {
+  background-image: url(/images/sock-img/cannabis.png);
+  background-size: 24%;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 40%;
+}
+
+/* Pattern select buttons */
+
+.sockOleg{
+  background-image: url(/images/sock-patterns/oleg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.sockElbrus{
+  background-image: url(/images/sock-patterns/elbrus.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.sockHeart{
+  background-image: url(/images/sock-patterns/heart.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.sockCat{
+  background-image: url(/images/sock-patterns/cat.png);
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+.sockPoo{
+  background-image: url(/images/sock-patterns/poo.png);
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+.sockSockPrint{
+  background-image: url(/images/sock-patterns/sock-print.png);
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+.sockStripes{
+  background-image: url(/images/sock-patterns/stripes.png);
+  background-size: 150%;
+  background-repeat: repeat-y;
+}
+
+/* Cart style */
+
+/* #cart-main {
+  text-align: center;
+} */
+
+#cart-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+  width: 30%;
+  text-align: center;
+}
+
+#cart-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: left;
+}
+
+#cart-img {
+  width: 75%;
+}
+
+#cart-img img {
+  width: 75%
+}
+
+#cart-mini-text {
+  font-size: 10px;
+}
+
+#order-card {
+  display: flex;
+  flex-direction: row;
+}
+
+#order-card img {
+  width: 10%;
+}
+
+#order-price {
+  font-size: 25px;
+  margin: 0 30px 0 30px;
+}
+
+#order-text {
+  margin: 10px;
+}
+
+#order-text p {
+  font-size: 25px;
+  margin: 10px;
+}
+
+#order-delete-btn {
+  margin: 0;
+  font-size: 25px;
+}
+
+/* #cart-btn {
+  margin-left: 30%;
+} */
+
+/* cart-style */
+
+/* .main-cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 5vh;
+  margin: 1%;
+}
+
+.card img{
+  width: 200px;
+  height: 200px;
+}
+
+.card-text {
+  font-size: 3vh;
+  width: 150px;
+}
+
+.cart-btn a {
+  position: absolute;
+  right: 10%;
+  font-size: 3vh;
+} */
+
