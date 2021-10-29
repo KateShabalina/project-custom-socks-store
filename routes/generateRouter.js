@@ -17,13 +17,14 @@ router.get('/', (req, res) => {
 router.post('/', async (req, res) => {
   const { style } = req.body;
   const { id } = req.session.user;
-  console.log(style);
-  console.log(req.body);
-  console.log(req.session.user.id);
+  // console.log(style);
+  // console.log(req.body);
+  // console.log(req.session.user.id);
 
   const addToDB = await Sock.create({
     UserId: id,
-    style: style
+    style: style,
+    isFavourite: true
   });
 
   if (addToDB) {
@@ -32,6 +33,31 @@ router.post('/', async (req, res) => {
     res.json({ okay: false })
   }
 
-})
+});
+
+router.post('/basket', async (req, res) => {
+  const { style } = req.body;
+  const { id } = req.session.user;
+  console.log(style);
+  console.log(req.body);
+  console.log(req.session.user.id);
+
+  const addToDB = await Sock.create({
+    UserId: id,
+    style: style,
+    isOrdered: true,
+  });
+
+  if (addToDB) {
+    res.json({ okay: true })
+  } else {
+    res.json({ okay: false })
+  }
+
+});
+
+
+
+
 
 module.exports = router;
