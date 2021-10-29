@@ -7,9 +7,12 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      UserId: {
+      userId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        //это важно!
+        onDelete: 'cascade',
+        onUpdate: 'cascade',
         references: {
           model: 'Users',
           key: 'id',

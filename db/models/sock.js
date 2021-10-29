@@ -4,19 +4,19 @@ const {
 
 module.exports = (sequelize, DataTypes) => {
   class Sock extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate({ User}) {
-      this.belongsTo(User);
-      // this.belongsTo(Order);
+    static associate({ User, Order }) {
+      //это важно!
+      Sock.belongsTo(User, {
+        foreignKey: 'userId'
+      });
+      Sock.hasMany(Order, {
+        foreignKey: 'sockId'
+      });
     }
   }
   Sock.init({
-    UserId: {
-      type: DataTypes.TEXT,
+    userId: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     color: DataTypes.TEXT,

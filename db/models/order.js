@@ -4,35 +4,28 @@ const {
 
 module.exports = (sequelize, DataTypes) => {
   class Order extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate({ User }) {
-      this.belongsTo(User);
-      // this.hasMany(Sock);
+    static associate({ User, Sock }) {
+      //это важно!
+      Order.belongsTo(User, {
+        foreignKey: 'userId'
+      });
+      Order.belongsTo(Sock, {
+        foreignKey: 'sockId'
+      });
     }
   }
+  //**обратите внимание на тип данных в сторонних ID**
   Order.init({
-    UserId: {
-      type: DataTypes.TEXT,
+    userId: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
-    SockId: {
-      type: DataTypes.TEXT,
+    sockId: {
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     count: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    toPay: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    fullname: {
-      type: DataTypes.TEXT,
       allowNull: false,
     },
     address: {
