@@ -1,5 +1,6 @@
 const addFavouriteBtn = document.getElementById('add-favourite-btn');
 const addBacketBtn = document.getElementById('add-to-basket-btn');
+const addShareBtn = document.getElementById('add-share-btn');
 
 addFavouriteBtn?.addEventListener('click', async (event) => {
   // event.preventDefault();
@@ -16,7 +17,7 @@ addFavouriteBtn?.addEventListener('click', async (event) => {
   });
   const data = await response.json();
   if (data.okay) {
-    alert('Носок добавлен в избраное')
+    alert('НОСКИ ДОБАВЛЕНЫ В ИЗБРАННОЕ!')
   } else {
     alert('NOT OKAY')
   }
@@ -36,7 +37,7 @@ addBacketBtn?.addEventListener('click', async (event) => {
   });
   const data = await response.json();
   if (data.okay) {
-    alert('Носок добавлен в корзину')
+    alert('НОСКИ ДОБАВЛЕНЫ В КОРЗИНУ!')
   } else {
     alert('NOT OKAY')
   }
@@ -44,3 +45,7 @@ addBacketBtn?.addEventListener('click', async (event) => {
   // window.location.href = '/favourites';
 });
 
+addShareBtn?.addEventListener('click', async (event) => {
+  alert(`ПОДЕЛИСЬ ЭТОЙ ССЫЛКОЙ: ${document.URL} C ДРУЗЬЯМИ!`)
+}
+);

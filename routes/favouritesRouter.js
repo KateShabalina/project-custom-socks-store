@@ -29,4 +29,22 @@ router.delete('/delete', async (req, res) => {
   return res.json({ isDeleteSuccessful: true });
 })
 
+router.put('/', async (req, res) => {
+  const id = +req.body.id;
+  const toCart = await Sock.findOne({ where: { id } });
+  try {
+    const updateDb = await toCart.update({
+      isOrdered: true
+    },
+    {where: { id } }
+    );
+  } catch (error) {
+    console.log(error);
+    return res
+      .status(500)
+      .json({ okay: false })
+  }
+  return res.json({  okay: true });
+})
+
 module.exports = router;
