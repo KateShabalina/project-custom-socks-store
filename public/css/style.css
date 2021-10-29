@@ -499,6 +499,11 @@
 
 /* cart-style */
 
+/* .main-cart {
+  display: flex;
+  flex-direction: column;
+}
+
 .cardArea {
   display: flex;
   flex-direction: row;
@@ -506,12 +511,24 @@
   flex-wrap: wrap;
 }
 
-.img-cart img{
-  width: 150px;
-  height: 150px;
+.card {
+  width: 5vh;
+  margin: 1%;
 }
 
-#countForm {
-  font-size: 2vh;
+.card img{
+  width: 200px;
+  height: 200px;
 }
+
+.card-text {
+  font-size: 3vh;
+  width: 150px;
+}
+
+.cart-btn a {
+  position: absolute;
+  right: 10%;
+  font-size: 3vh;
+} */
 
