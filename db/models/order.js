@@ -1,3 +1,5 @@
+// CORRECT DB
+
 const {
   Model,
 } = require('sequelize');
