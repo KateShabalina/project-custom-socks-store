@@ -449,3 +449,22 @@
   background-size: 200%;
   background-repeat: repeat-y;
 }
+
+/* cart-style */
+
+.cardArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.img-cart img{
+  width: 150px;
+  height: 150px;
+}
+
+#countForm {
+  font-size: 2vh;
+}
+
