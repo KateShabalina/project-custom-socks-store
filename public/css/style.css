@@ -18,6 +18,7 @@
 .logo {
   display: flex;
   height: 7vh;
+  margin-top: -1%;
   padding-bottom: 4%;
 }
 
@@ -181,97 +182,142 @@
 
 .generator {
   /* height: 700px; */
+  margin-top: 3%;
   display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  margin-top: 2%;
+  /* justify-content: center; */
+
 }
 
 .sock-image {
+  width: 100%;
+  margin-left: 10%;
   /* background-color: aqua; */
   /* margin-right: -100px; */
-  display: flex;
-  justify-content: space;
+  /* display: flex;
+  justify-content: space-evenly; */
   /* background-color: aqua;
   background-image: url(/images/sock-patterns/oleg.png); */
 }
 
 .sock-image img {
-  width: 350px;
+  /* width: 350px; */
+
+  height: 100%;
+  width: 100%;
 }
 
 .parameters {
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.color-picker input {
-  width: 100px;
-  height: 100px;
+
+.color-picker {
+  margin-bottom: 5%;
+}
+
+.color-picker h4 {
+  font-size: 40px;
+}
+
+.color-picker button {
+  width: 10%;
+  height: 75%;
 }
 
 /* Sock color */
 #green {
   background-color: #00A19D;
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
 }
 
 #beige {
   background-color: #FFF8E5;
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
 }
 
 #orange {
   background-color: #FFC069;
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
 }
 
 #red {
   background-color: #E05D5D;
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
 }
 
 #blue {
   background-color: #A2D2FF;
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
 }
 
 #yellow {
   background-color: #FEE440;
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
 }
 
 #pink {
   background-color: #E4BAD4;
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
 }
 
 #del-color {
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
   background-image: url(/images/remove.png);
-  background-size: 90%;
+  background-size: 80%;
   background-repeat: no-repeat;
-  background-position-x: 5px;
-  background-position-y: 5px;
+  background-position-x: 55%;
+  background-position-y: 55%;
+}
+
+.img-picker {
+  margin-bottom: 0%;
+}
+
+.img-picker h4 {
+  font-size: 40px;
 }
 
 .img-picker input {
-  width: 100px;
-  height: 100px;
+  width: 10%;
+  height: 50%;
+  /* width: 100px;
+  height: 100px; */
+}
+
+.pattern-picker {
+  margin-bottom: 5%;
+}
+
+.pattern-picker h4 {
+  font-size: 40px;
 }
 
 .pattern-picker button {
-  width: 100px;
-  height: 100px;
+  width: 10%;
+  height: 75%;
+  /* width: 100px;
+  height: 100px; */
+}
+
+.generator-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.generator-buttons button {
+  width: 30%;
+  font-size: 25px;
 }
 
 /* Pattern background-image */
@@ -312,12 +358,13 @@
   background-repeat: no-repeat;
 }
 
+
 #del-pattern {
   background-image: url(/images/remove.png);
-  background-size: 90%;
+  background-size: 80%;
   background-repeat: no-repeat;
-  background-position-x: 5px;
-  background-position-y: 5px;
+  background-position-x: 55%;
+  background-position-y: 55%;
 }
 
 .generator-buttons {
@@ -354,56 +401,56 @@
   background-image: url(/images/sock-img/whale.png);
   background-size: 24%;
   background-repeat: no-repeat;
-  background-position-x: 240px;
-  background-position-y: 190px;
+  background-position-x: 90%;
+  background-position-y: 40%;
 }
 
 .sockTiger {
   background-image: url(/images/sock-img/tiger.png);
   background-size: 24%;
   background-repeat: no-repeat;
-  background-position-x: 240px;
-  background-position-y: 190px;
+  background-position-x: 90%;
+  background-position-y: 40%;
 }
 
 .sockRobin {
   background-image: url(/images/sock-img/robin.png);
   background-size: 24%;
   background-repeat: no-repeat;
-  background-position-x: 240px;
-  background-position-y: 190px;
+  background-position-x: 90%;
+  background-position-y: 40%;
 }
 
 .sockMountain {
   background-image: url(/images/sock-img/mountain.png);
   background-size: 24%;
   background-repeat: no-repeat;
-  background-position-x: 240px;
-  background-position-y: 190px;
+  background-position-x: 90%;
+  background-position-y: 40%;
 }
 
 .sockWine {
   background-image: url(/images/sock-img/wine-bottle.png);
   background-size: 24%;
   background-repeat: no-repeat;
-  background-position-x: 240px;
-  background-position-y: 190px;
+  background-position-x: 90%;
+  background-position-y: 40%;
 }
 
 .sockShawarma {
   background-image: url(/images/sock-img/shawarma.png);
   background-size: 24%;
   background-repeat: no-repeat;
-  background-position-x: 240px;
-  background-position-y: 190px;
+  background-position-x: 90%;
+  background-position-y: 40%;
 }
 
 .sockCannabis {
   background-image: url(/images/sock-img/cannabis.png);
   background-size: 24%;
   background-repeat: no-repeat;
-  background-position-x: 240px;
-  background-position-y: 190px;
+  background-position-x: 90%;
+  background-position-y: 40%;
 }
 
 /* Pattern select buttons */
@@ -446,6 +493,6 @@
 
 .sockStripes{
   background-image: url(/images/sock-patterns/stripes.png);
-  background-size: 200%;
+  background-size: 150%;
   background-repeat: repeat-y;
 }
