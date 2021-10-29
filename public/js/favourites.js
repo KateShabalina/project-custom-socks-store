@@ -1,14 +1,23 @@
-const addFavouriteBtn = document.getElementById('add-favourite-btn');
+// const addFavouriteBtn = document.getElementById('add-favourite-btn');
 
 addFavouriteBtn?.addEventListener('click', async (event) => {
-  const response = await fetch('/generate', { // потому что перехватываю я на generate
+  const style = document.querySelector('.sockMain').outerHTML;
+
+  const response = await fetch('/generate', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      title: event.target.title.value,
-      body: event.target.body.value
+      style,
     })
   });
+  const data = await response.json();
+  if (data.okay) {
+    alert('okay')
+  } else {
+    alert('NOT OKAY')
+  }
+  // window.location.href = '/favourites';
 });
+

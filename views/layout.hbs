@@ -18,15 +18,16 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
 
-  {{!--
+ 
   <script defer src="https://api-maps.yandex.ru/2.1/?apikey=a545ecaa-8ed4-49a5-a155-8d74d7c6f829&lang=ru_RU$mode=debug"
-    type="text/javascript"></script> --}}
-  {{!--
+    <type="text/javascript"></script>
+ 
   <script defer src="js/yandex.map.js"></script> --}}
-  <script defer src="js/main.js"></script>
-  {{!-- <script defer src="js/generateSocks.js"></script> --}}
+  <script defer src="js/main.js" defer></script>
+  <script defer src="/js/generateSocks.js"></script>
   <script defer src="js/favourites.js"></script>
-  <script defer src="js/cart.js"></script>
+  <script defer src="js/changesFav.js"></script>
+
   <title>Создай носки мечты</title>
 </head>
 
@@ -35,8 +36,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
         <div class="logo">
-          <img src="/images/socks-icon.png" width="60" height="60" class="d-inline-block align-text-top">
-          <a class="navbar-brand" href="/">
+          <img src="/images/socks-icon.png" class="d-inline-block align-text-top">
+          <a class="navbar-brand" id="title-main" href="/">
             ELBRUS SOCKS
           </a>
         </div>
@@ -46,16 +47,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            {{!-- isSession - условность, тут разделение на то, что видит зарегистрированный пользователь и нет
-            --}}
             {{#if isSession}}
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/favourites"><img src="/images/heart.png"
-                  style="width: 35px; height=35px"></a>
+              <a class="nav-link active" aria-current="page" href="/favourites">Избранное <img src="/images/fav.png"
+                  style="width: 7vh; height: 7vh"></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/cart"><img src="/images/icons8-корзина-50.png"
-                  style="width: 35px; height=35px"></a>
+              <a class="nav-link active" aria-current="page" href="/cart">Корзина <img src="/images/cart2.png"
+                  style="width: 7vh; height: 7vh"></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/logout">Выйти</a>
