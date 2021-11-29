@@ -43,3 +43,18 @@
 * Кнопка оформления заказа
   * При нажатии уходит email на почту магазина с параметрами заказа
 
+## Стек технологий:
+JavaScript
+
+DB: PostgreSQL, Sequelize ORM
+
+Back: Node.js, Express, Sessions, Bcrypt, Handlebars
+
+Front: Bootstrap, HTML5, CSS
+
+## Установка:
+npm ci
+npx sequelize db:create
+npx sequelize db:migrate
+npx sequelize db:seed:all
+npm run dev
